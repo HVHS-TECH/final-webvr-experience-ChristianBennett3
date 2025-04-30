@@ -15,6 +15,10 @@
           src="crowd-noise-284490.mp3"
           preload="auto"
         ></audio>
+        <audio
+          id="crowd-cheering"
+          src="crowdcheering.mp3"
+          preload="auto"
       </a-assets>
 
       <a-sky color="lightblue"></a-sky>
@@ -31,6 +35,14 @@
         loop: true; 
         positional: false"
       ></a-entity>
+
+      <a-entity
+      sound="src: #crowd-cheering; 
+      autoplay: true; 
+      loop: true; 
+      positional: false"
+    ></a-entity>
+
 
       <a-entity 
         ply-model="src:PLAYER1AUS.ply"
