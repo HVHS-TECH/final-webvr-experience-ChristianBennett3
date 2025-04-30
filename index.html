@@ -24,6 +24,18 @@
 
       <a-sky color="lightblue"></a-sky>
 
+      <a-entity id="sun"
+        light="type: directional; intensity: 1; castShadow: true"
+        position="0 10 -10"
+        animation=
+        "property: position; 
+        to: 0 10 10; 
+        dir: alternate; 
+        dur: 10000; 
+        oop: true; 
+        easing: easeInOutSine">
+      </a-entity>
+
       <a-plane
         scale="500 500"
         color="mediumseagreen"
