@@ -9,13 +9,28 @@
     <body>
     <a-scene>
 
+      <a-assets>
+        <audio
+          id="ambient-noise" 
+          src="crowd-noise-284490.mp3"
+          preload="auto"
+        ></audio>
+      </a-assets>
+
       <a-sky color="lightblue"></a-sky>
-      
+
       <a-plane
         scale="500 500"
         color="mediumseagreen"
         rotation="-90 0 0"
       ></a-plane>
+
+      <a-entity
+        sound="src: #ambient-noise"
+        autoplay="true"
+        loop="true"
+        positional="false"
+      ></a-entity>
 
       <a-entity 
         ply-model="src:PLAYER1AUS.ply"
