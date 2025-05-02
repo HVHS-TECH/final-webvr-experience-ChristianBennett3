@@ -38,37 +38,106 @@
       ></a-entity>
 
       <a-entity
-      sound="src: #crowd-cheering; 
-      autoplay: true; 
-      loop: true; 
-      positional: false"
-    ></a-entity>
-
+        sound="src: #crowd-cheering; 
+        autoplay: true; 
+        loop: true; 
+        positional: false"
+      ></a-entity>
 
       <a-entity 
-        ply-model="src:PLAYER1AUS.ply"
-        position="7 -1 2"
+        ply-model="src:stadium.ply"
+        position="-30 -30 30"
+        rotation="-90 0 0"
+        scale="5 5 5"
+      ></a-entity>
+ 
+      <a-box
+        scale="2 5"
+        color="green"
+        position="0 -0.4.99 0"
+        rotation="-90 0 0"
+     ></a-box>
+
+      <a-entity 
+        ply-model="src:nz2.ply"
+        position="-5 0 0"
+        rotation="-90 90 -90"
+        scale=".5 .5 .5"
+      ></a-entity>
+
+      <a-entity 
+        ply-model="src:nz3.ply"
+        position="0 0 4"
         rotation="-90 90 0"
         scale=".5 .5 .5"
       ></a-entity>
 
+      <a-entity 
+        ply-model="src:nz4.ply"
+        position="5 0 0"
+        rotation="-90 90 90"
+        scale=".5 .5 .5"
+      ></a-entity>
+
+      <a-entity 
+        ply-model="src:nz5.ply"
+        position="0.5 0 -6"
+        rotation="-90 90 180"
+        scale=".5 .5 .5"
+        animation="
+          property: position;
+          to: 0.5 0 3;
+          dir alternate;
+          dur: 2000;
+          loop: true;
+        "
+      ></a-entity>
+
+      <a-entity 
+        ply-model="src:building1.ply"
+        position="-30 -30 50"
+        rotation="-90 0 0"
+        scale="15 15 15"
+      ></a-entity>
+
     <a-entity 
-      ply-model="src:stadium.ply"
-      position="-30 -30 30"
+      ply-model="src:building2.ply"
+      position="35 -5 30"
       rotation="-90 0 0"
-      scale="5 5 5"
+      scale="15 15 15"
     ></a-entity>
- 
-    <a-box
-      scale="2 5"
-      color="green"
-      position="0 -0.4.99 0"
+
+    <a-entity 
+      ply-model="src:building3.ply"
+      position="30 0 -35"
       rotation="-90 0 0"
-    ></a-box>
+      scale="15 15 15"
+    ></a-entity>
 
     <a-entity 
       ply-model="src:building1.ply"
-      position="40 -30 55"
+      position="40 -40 0"
+      rotation="-90 0 0"
+      scale="15 15 15"
+    ></a-entity>
+
+    <a-entity 
+      ply-model="src:building1.ply"
+      position="-30 -30 -30"
+      rotation="-90 0 0"
+      scale="15 15 15"
+    ></a-entity>
+
+    <a-entity 
+      ply-model="src:building2.ply"
+      position="-50 -30 0"
+      rotation="-90 0 0"
+      scale="15 15 15"
+    ></a-entity>
+
+    <a-entity 
+      ply-model="src:building2.ply"
+      position="-51 -30 0"
       rotation="-90 0 0"
       scale="15 15 15"
     ></a-entity>
